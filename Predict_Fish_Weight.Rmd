@@ -133,4 +133,6 @@ summary.lm(Roach6)
 ```
 ## Final Summary Statements
 
-We learned how to make multiple regression models manually and automated. This showed us how to determine the best model and what models were done in what order as well. 
+We learned how to make multiple regression models manually and automated. This showed us how to determine the best model and what models were done in what order as well.
+
+
