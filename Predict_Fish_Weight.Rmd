@@ -68,6 +68,7 @@ library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
 ```
 ### Best Two regressor model
+
 For Perch the best two regression models are height and width. Overall the bestare height and width with an adjusted R squared of 0.94
 
 ```{r}
@@ -93,7 +94,9 @@ library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
 ```
 ### Best Two regressor model
+
 The regression model is L1-L2-L3-H-W. with an adjusted R square of 0.9794 The best two are Length1-Length3with an R squared of 0.9649. 
+
 ```{r}
 PIKE3 <- lm(Weight~ . ,data=Pike)
 summary.lm(PIKE3)
@@ -121,6 +124,7 @@ library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="bottom",main="Adjusted R^2")
 ```
 ### Best Two regressor model
+
 The best model and the best two regression moldel is length3-width with an adjusted R squared of 0.8482.
 
 ```{r}
@@ -128,3 +132,5 @@ Roach6 <- lm(Weight~ .-Height-Length3-Length2 ,data=Roach)
 summary.lm(Roach6)
 ```
 ## Final Summary Statements
+
+We learned how to make multiple regression models manually and automated. This showed us how to determine the best model and what models were done in what order as well. 
