@@ -121,5 +121,10 @@ library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="bottom",main="Adjusted R^2")
 ```
 ### Best Two regressor model
+The best model and the best two regression moldel is length3-width with an adjusted R squared of 0.8482.
 
+```{r}
+Roach6 <- lm(Weight~ .-Height-Length3-Length2 ,data=Roach)
+summary.lm(Roach6)
+```
 ## Final Summary Statements
